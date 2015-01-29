@@ -17,7 +17,7 @@ config = {
         database: process.env.POSTGRES_DATABASE || 'ghost',
         port: process.env.POSTGRES_PORT || 5432
       },
-      debug: false
+      debug: true
     },
     server: {
       host: '0.0.0.0',
