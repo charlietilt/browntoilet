@@ -1,0 +1,27 @@
+{
+  "name": "browntoilet",
+  "version": "0.0.0",
+  "description": "Brown Toilet Blog",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1.8",
+    "ghost": "^0.5.8",
+    "ghost-s3": "0.0.0",
+    "pg": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/charlietilt/browntoilet.git"
+  },
+  "author": "Charlie Tilt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlietilt/browntoilet/issues"
+  },
+  "homepage": "https://github.com/charlietilt/browntoilet"
+}
