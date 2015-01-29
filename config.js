@@ -13,8 +13,8 @@ config = {
       connection: {
         host: process.env.POSTGRES_HOST || 'localhost',
         user: process.env.POSTGRES_USER || 'postgres',
-        password: process.env.POSTGRES_PASS || 'postgres',
-        database: process.env.POSTGRES_DB || 'ghost',
+        password: process.env.POSTGRES_PASSWORD || 'postgres',
+        database: process.env.POSTGRES_DATABASE || 'ghost',
         port: process.env.POSTGRES_PORT || 5432
       },
       debug: false
@@ -23,6 +23,7 @@ config = {
       host: '0.0.0.0',
       port: process.env.PORT || 2368
     },
+    fileStorage: false,
     paths: {
         contentPath: path.join(__dirname, '/content/')
     }
