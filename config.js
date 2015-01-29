@@ -19,6 +19,17 @@ config = {
       },
       debug: true
     },
+    mail: {
+      transport: 'SMTP',
+      host: 'smtp.mandrillapp.com',
+      options: {
+        service: 'Mandrill',
+        auth: {
+          user: process.env.MANDRILL_USERNAME,
+          pass: process.env.MANDRILL_APIKEY
+        }
+      }
+    },
     server: {
       host: '0.0.0.0',
       port: process.env.PORT || 2368
