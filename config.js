@@ -17,7 +17,7 @@ config = {
         database: process.env.POSTGRES_DATABASE || 'ghost',
         port: process.env.POSTGRES_PORT || 5432
       },
-      debug: true
+      debug: false
     },
     mail: {
       transport: 'SMTP',
@@ -42,13 +42,13 @@ config = {
 
   development: {
     url: 'http://localhost:2368',
-    // database: {
-    //     client: 'sqlite3',
-    //     connection: {
-    //         filename: path.join(__dirname, '/content/data/ghost-dev.db')
-    //     },
-    //     debug: false
-    // },
+    database: {
+      client: 'sqlite3',
+      connection: {
+        filename: path.join(__dirname, '/content/data/ghost-dev.db')
+      },
+      debug: false
+    },
     // database: {
     //   client: 'pg',
     //   connection: {
