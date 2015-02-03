@@ -34,7 +34,13 @@ config = {
       host: '0.0.0.0',
       port: process.env.PORT || 2368
     },
-    fileStorage: false,
+    fileStore: 'ghost-s3-file-store',
+    aws: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+      bucket: process.env.AWS_BUCKET,
+      region: process.env.AWS_REGION || 'us-east-1',
+    }
     paths: {
         contentPath: path.join(__dirname, '/content/')
     }
@@ -49,23 +55,20 @@ config = {
       },
       debug: false
     },
-    // database: {
-    //   client: 'pg',
-    //   connection: {
-    //     host: process.env.POSTGRES_HOST || 'localhost',
-    //     user: process.env.POSTGRES_USER || 'postgres',
-    //     password: process.env.POSTGRES_PASS || 'postgres',
-    //     database: process.env.POSTGRES_DB || 'ghost',
-    //     port: process.env.POSTGRES_PORT || 5432
-    //   },
-    //   debug: false
-    // },
     server: {
       host: '0.0.0.0',
       port: process.env.PORT || 2368
     },
     paths: {
         contentPath: path.join(__dirname, '/content/')
+    },
+    fileStore: 'ghost-s3-file-store', //local-file-store
+    aws: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID || 'AKIAIHFVIAU6355LIKRA',
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || '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',
+      bucket: process.env.AWS_BUCKET || 'browntoilet-development',
+      region: process.env.AWS_REGION || 'us-east-1',
+      //assetHost: proccess.env.AWS_ASSET_HOST // Optional
     }
   }
 };
