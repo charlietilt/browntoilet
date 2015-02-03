@@ -4,10 +4,8 @@
   "description": "Brown Toilet Blog",
   "main": "index.js",
   "dependencies": {
-    "aws-sdk": "^2.1.8",
-    "ghost": "^0.5.8",
-    "ghost-s3": "0.0.0",
     "newrelic": "^1.15.1",
+    "ghost":"git@github.com:charlietilt/Ghost.git#ghost-s3-file-store",
     "pg": "^4.2.0"
   },
   "devDependencies": {},
