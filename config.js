@@ -64,8 +64,8 @@ config = {
     },
     fileStore: 'ghost-s3-file-store', //local-file-store
     aws: {
-      accessKeyId: process.env.AWS_ACCESS_KEY_ID || 'AKIAIHFVIAU6355LIKRA',
-      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || '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',
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
       bucket: process.env.AWS_BUCKET || 'browntoilet-development',
       region: process.env.AWS_REGION || 'us-east-1',
       //assetHost: proccess.env.AWS_ASSET_HOST // Optional
