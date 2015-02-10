@@ -40,7 +40,7 @@ config = {
       secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
       bucket: process.env.AWS_BUCKET,
       region: process.env.AWS_REGION || 'us-east-1',
-    }
+    },
     paths: {
         contentPath: path.join(__dirname, '/content/')
     }
