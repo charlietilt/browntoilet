@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     done = @async()
     grunt.util.spawn
       grunt: true
-      args: ['prod']
+      args: ['init']
       opts:
         cwd: 'node_modules/ghost/'
     , (err, result, code) ->
