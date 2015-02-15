@@ -14,8 +14,8 @@ config =
     contentPath: path.join __dirname, '/content/'
   fileStore: 'ghost-s3-file-store'
   aws:
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID or 'AKIAI45NKFAKE5RPXFEA'
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY or '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'
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
     bucket: process.env.AWS_BUCKET or 'browntoilet-development'
     region: process.env.AWS_REGION or 'us-east-1'
 
