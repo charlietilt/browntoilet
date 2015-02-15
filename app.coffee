@@ -1,6 +1,5 @@
 ghost = require 'ghost'
 path = require 'path'
-config = require './config'
 
 if process.env.NODE_ENV is 'production'
   newrelic = require 'newrelic'
