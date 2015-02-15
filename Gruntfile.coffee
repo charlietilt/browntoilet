@@ -1,6 +1,7 @@
 module.exports = (grunt) ->
   grunt.registerTask 'heroku:production', ->
     done = @async()
+    return done()
     grunt.util.spawn
       grunt: true
       args: ['init']
