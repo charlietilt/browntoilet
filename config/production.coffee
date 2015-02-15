@@ -30,6 +30,6 @@ config =
     region: process.env.AWS_REGION or 'us-east-1'
 
   paths:
-    contentPath: path.join __dirname, '/content/'
+    contentPath: path.join __dirname, '../content/'
 
 module.exports = config
