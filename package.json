@@ -10,6 +10,9 @@
     "pg": "4.4.3"
   },
   "devDependencies": {},
+  "engines": {
+    "node": "0.12.7"
+  },
   "scripts": {
     "start": "coffee app.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
