@@ -1,1 +1,1 @@
-web: NODE_ENV=production coffee app.coffee
+web: coffee app.coffee

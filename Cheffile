@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+site 'https://supermarket.getchef.com/api/v1'
+
+### cookbooks
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'nodejs'

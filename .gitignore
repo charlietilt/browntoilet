@@ -31,3 +31,7 @@ content/data
 content/images
 
 config/local.coffee
+
+.vagrant
+cookbooks
+tmp
